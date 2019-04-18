@@ -37,7 +37,7 @@ Import `ghasedak` package:
 const Ghasedak = require("ghasedak");
 ```
 
-You need a [Ghasedak](https://ghasedakapi.com) account. Register and get your API key.
+You need a [Ghasedak](https://ghasedak.io) account. Register and get your API key.
 
 Create an instance from `Ghasedak` class with your API key:
 
