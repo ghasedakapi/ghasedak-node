@@ -1,6 +1,6 @@
 {
 	"name": "ghasedak",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Ghasedak sms webservice api package",
 	"main": "lib/Ghasedak.js",
 	"scripts": {
