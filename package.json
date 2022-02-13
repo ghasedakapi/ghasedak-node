@@ -20,5 +20,8 @@
 	"bugs": {
 		"url": "https://github.com/ghasedakapi/ghasedak-node/issues"
 	},
-	"homepage": "https://github.com/ghasedakapi/ghasedak-node#readme"
+	"homepage": "https://github.com/ghasedakapi/ghasedak-node#readme",
+	"dependencies": {
+		"node-fetch": "^2.6.7"
+	}
 }

@@ -43,16 +43,48 @@ Create an instance from `Ghasedak` class with your API key:
 
 ```javascript
 let ghasedak = new Ghasedak(
-	"3ef8539ba50c06b2a11d674c8a7ded7d7360d7b090b5146ff0761e8d9927bd31"
+  "3ef8539ba50c06b2a11d674c8a7ded7d7360d7b090b5146ff0761e8d9927bd31"
 );
 ```
 
-Send some sms:
+Send a single sms:
 
 ```javascript
 ghasedak.send({
-	message: "Hello World!",
-	receptor: "09xxxxxxxxx"
+  message: "Hello World!",
+  receptor: "09xxxxxxxxx",
+  linenumber: "xxxxxxxx",
+});
+```
+
+Send a group massages:
+
+```javascript
+ghasedak.bulk({
+  message: "Hello World!",
+  receptor: "09xxxxxxxxx",
+  linenumber: "xxxxxxxx",
+  senddate: "1644732815",
+});
+```
+
+get the status of massages:
+
+```javascript
+ghasedak.status({
+  id: "2914845496",
+  type: "1",
+});
+```
+
+Send a verification massages:
+
+```javascript
+ghasedak.verification({
+  receptor: "09xxxxxxxxx",
+  type: "1",
+  template: "Your Template",
+  param1: "xxx",
 });
 ```
 
